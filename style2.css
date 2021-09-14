@@ -1,0 +1,204 @@
+body{
+    font-size: 0.925em;
+}
+*{
+    margin: 0;
+}
+
+.outline{
+    display: flex;
+}
+
+.outline .content{
+    width: 100%;
+    display: flex;
+}
+
+.outline .content .left{
+    flex: 2;
+    height: 100vh;
+    box-shadow: 0 0 3px #999999; 
+
+}
+.outline .content .right{
+    flex: 10;
+    background-color: rgb(245, 179, 155);
+    width: 700vh;
+}
+
+
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+.pcast-player .image img{
+    width: 50px;
+    height: 70px;
+    margin-bottom: 0px;
+}
+
+.pcast-player .image .fa-heart{
+    width: 50px;
+    height: 30px;
+    color: green;
+    margin-bottom: 25px;
+    margin-left: 5px;
+}
+.pcast-player{
+    box-shadow: 0 0 3px #999999; 
+    background-color: white;
+    display: flex;
+}
+
+.pcast-player .text{
+    margin-top: 17px;
+    margin-left: 7px;
+}
+
+.pcast-player .text p{
+    color: grey;
+    
+}
+
+.pcast-player .play-section{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.pcast-player .pcast-player-controls{
+    box-sizing: border-box;
+    background:white;
+    color:black;
+    box-shadow:  0 0 3px #999999;
+    font-size: 14px;
+    height: 42px;
+    overflow: hidden;
+    padding: 5px;
+}
+.pcast-player .play-section{
+    margin-left: 35vh;
+}
+
+.pcast-player .play-section .top span{
+    margin-left: 10vh;
+}
+
+.pcast-player .play-section .top{
+    margin-left: 15vh;
+    margin-top: 3vh;
+}
+
+.pcast-player .play-section .top .fa-random{
+    color: green;
+}
+
+.pcast-player .side{
+    float: right;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+.pcast-player .side span{
+    margin-left: 4vh;
+}
+
+
+
+.pcast-player .side progress{
+    height: 3px;
+    width:7vh;
+    margin-bottom: 3px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+    
+}
+
+
+    
+
+.pcast-player .play-section .buttom span{
+    margin-bottom: 5px;
+}
+
+
+button{
+    background: #2a2a2a;
+    color: #fff;
+    border: 0;
+    border-radius: 2px;
+    padding: 5px;
+    line-height: 22px;
+    -webkit-appreance: none;
+    min-width: 32px;
+}
+
+button span{
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+
+progress {
+    height: 3px;
+    width:80vh;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: #555;
+    border-radius: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value{
+    background: #fff; 
+}
+
+.pcast-time {
+    display: inline-block;
+    font-size: 13px;
+    padding: 0 5px;
+    text-align: center;
+    width: 4em;
+}
+
+.pcast-speed {
+    width: 2.5em;
+}
+
+.pcast-download {
+    font-size: 12px;
+    margin-top: 0.5em;
+    display: inline-block;
+    color: black;
+}
+
+.pcast-download:hover{
+    color: #666;
+}
+
+.pcast-download:focus{
+    color: #666;
+}
+
+
+
+
