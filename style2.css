@@ -28,17 +28,6 @@ body{
 
 
 
-.visually-hidden {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    padding:0 !important;
-    border:0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden;
-}
-
 .pcast-player .image img{
     width: 50px;
     height: 70px;
@@ -74,22 +63,14 @@ body{
     
 }
 
-.pcast-player .pcast-player-controls{
-    box-sizing: border-box;
-    background:white;
-    color:black;
-    box-shadow:  0 0 3px #999999;
-    font-size: 14px;
-    height: 42px;
-    overflow: hidden;
-    padding: 5px;
-}
+
 .pcast-player .play-section{
     margin-left: 35vh;
 }
 
-.pcast-player .play-section .top span{
+.pcast-player .play-section .top button{
     margin-left: 10vh;
+    background-color: white;
 }
 
 .pcast-player .play-section .top{
@@ -122,35 +103,10 @@ body{
           appearance: none;
     
 }
-
-
-    
+  
 
 .pcast-player .play-section .buttom span{
     margin-bottom: 5px;
-}
-
-
-button{
-    background: #2a2a2a;
-    color: #fff;
-    border: 0;
-    border-radius: 2px;
-    padding: 5px;
-    line-height: 22px;
-    -webkit-appreance: none;
-    min-width: 32px;
-}
-
-button span{
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    padding:0 !important;
-    border:0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden;
 }
 
 
@@ -191,13 +147,7 @@ progress[value]::-webkit-progress-value{
     color: black;
 }
 
-.pcast-download:hover{
-    color: #666;
-}
 
-.pcast-download:focus{
-    color: #666;
-}
 
 
 
