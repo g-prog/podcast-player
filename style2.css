@@ -83,6 +83,24 @@ body{
  margin-top: 40px; 
 
 }
+
+.outline .content .left .library{
+  margin-top: 40px;
+  margin-left: 20px;
+ 
+}
+
+.outline .content .left .library h4{
+  margin-top: 20px;
+  font-size: 18px;
+ 
+}
+
+.outline .content .left .library h6{
+  color: gray;
+  font-weight: 100;
+ 
+}
 .outline .content .right{
   flex: 10;
   background-color: rgb(245, 179, 155);
@@ -100,8 +118,6 @@ body{
 }
 
 
-
-
 .music-container .navigation button .fa-backward,.fa-play,.fa-forward,.fa-pause{
   color: black;
 }
@@ -115,6 +131,7 @@ body{
   position: relative;
   margin: 10px 0;
   margin-left: 5vh;
+  
   
 }
 
