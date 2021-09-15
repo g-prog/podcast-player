@@ -142,6 +142,16 @@ body{
   margin-top: 20px
 }
 
+.music-container .img-container .fa-heart{
+  color: green;
+  margin-left: 20px;
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+.music-container .img-container{
+  display: flex;
+}
 .music-container .side span{
   margin-left: 4vh;
 }
@@ -165,9 +175,7 @@ body{
 }
 
 .img-container {
-  position: relative;
   width: 110px;
-  margin-top: 0px;
 }
 
 
@@ -175,7 +183,6 @@ body{
   object-fit: cover;
   height: 80px;
   width: 80px;
-  position: absolute;
   opacity: 3;
 }
 
