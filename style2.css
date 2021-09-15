@@ -101,6 +101,34 @@ body{
   font-weight: 100;
  
 }
+
+.outline .content .left .playlists .new-playlist{
+  display: flex;
+  background-color: rgb(241, 229, 229);
+  width: 150px;
+  margin-left: 12px;
+  margin-top: 20px;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.outline .content .left .playlists .new-playlist .fa-plus{
+  margin-right: 10px;
+ 
+}
+
+.outline .content .left .playlists .new-playlist p{
+  margin-right: 10px;
+ 
+}
+
+.outline .content .left .playlists h6{
+  color: gray;
+  font-weight: 100;
+  margin-left: 20px;
+  margin-top: 30px;
+ 
+}
 .outline .content .right{
   flex: 10;
   background-color: rgb(245, 179, 155);
