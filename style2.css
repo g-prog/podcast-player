@@ -43,13 +43,30 @@ body{
   margin-top: 20px;
   margin-left: 15px;
 }
+
+.outline .content .left .items .Analytics{
+  display: flex;
+  margin-top: 20px;
+  margin-left: 15px;
+}
 .outline .content .left .items .browse .fa-caret-square-down{
   margin-right:10px;
   margin-top: 3px;
   color: gray;
 }
 
+.outline .content .left .items .Analytics .fa-heart{
+  margin-right:10px;
+  margin-top: 3px;
+  color: gray;
+}
+
 .outline .content .left .items .browse h3{
+  color: gray;
+  font-weight: 100;
+}
+
+.outline .content .left .items .Analytics h3{
   color: gray;
   font-weight: 100;
 }
