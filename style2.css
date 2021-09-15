@@ -119,6 +119,7 @@ body{
 
 .outline .content .left .playlists .new-playlist p{
   margin-right: 10px;
+  font-weight: 100;
  
 }
 
@@ -166,28 +167,15 @@ body{
 .img-container {
   position: relative;
   width: 110px;
+  margin-top: 0px;
 }
 
-
-.img-container::after {
-  content: '';
-  background-color: #fff;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  width: 20px;
-  height: 20px;
-  transform: translate(-50%, 50%);
-}
 
 .img-container img {
   object-fit: cover;
-  height: 65px;
-  width: 65px;
+  height: 80px;
+  width: 80px;
   position: absolute;
-  bottom: 0;
-  left: 0;
   opacity: 3;
 }
 
