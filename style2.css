@@ -139,7 +139,7 @@ body{
 .music-container .side{
   float: right;
   margin-left: 120px;
-  margin-top: 20px
+  margin-top: 30px
 }
 
 .music-container .img-container .fa-heart{
@@ -157,8 +157,12 @@ body{
 }
 
 
-.music-container .navigation button .fa-backward,.fa-play,.fa-forward,.fa-pause{
+.music-container .navigation button .fa-backward,.fa-play,.fa-forward,.fa-pause,.fa-redo{
   color: black;
+}
+
+.music-container .navigation button .fa-random{
+  color: green;
 }
 .music-container .navigation{
   margin-left: 60vh;
