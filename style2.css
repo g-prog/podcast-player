@@ -37,6 +37,24 @@ body{
   font-size: 20px;
   margin-left: 5px;
 }
+
+.outline .content .left .items .browse{
+  display: flex;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.outline .content .left .items .browse .fa-caret-square-down{
+  margin-right:10px;
+  margin-top: 3px;
+  color: gray;
+}
+
+.outline .content .left .items .browse h3{
+  color: gray;
+  font-weight: 100;
+}
+
+
 .outline .content .left{
   flex: 2;
   height: 100vh;
