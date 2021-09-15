@@ -165,10 +165,9 @@ body{
 }
 .music-container {
   background-color: white;
-  border-radius: 15px;
   display: flex;
   position: relative;
-  margin: 10px 0;
+  margin: 4px 0;
   
   
 }
