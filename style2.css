@@ -17,10 +17,35 @@ body{
   display: flex;
 }
 
+.outline .content .left .items .home{
+  display: flex;
+  margin-left:9px;
+  background-color: rgb(245, 179, 155);
+  width: 150px;
+  padding: 12px 12px;
+  border-radius: 5px;
+}
+
+.outline .content .left .items .home .fa-home{
+  margin-right:10px;
+  color: red;
+  font-size: 20px;
+}
+
+.outline .content .left .items .home h3{
+  color: red;
+  font-size: 20px;
+  margin-left: 5px;
+}
 .outline .content .left{
   flex: 2;
   height: 100vh;
   box-shadow: 0 0 3px #999999; 
+
+}
+
+.outline .content .left .items{
+ margin-top: 40px; 
 
 }
 .outline .content .right{
