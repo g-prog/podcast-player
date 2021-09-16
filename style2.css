@@ -155,10 +155,12 @@ body{
 .outline .content .right .top-content .arrows .fa-chevron-right{
   margin-left: 30px;
   font-size: 20px;
+  margin-top: 5px;
 }
 
 .outline .content .right .top-content .arrows .fa-chevron-left{
   font-size: 20px;
+  margin-top: 5px;
 }
 
 .outline .content .right .top-content .search{
@@ -179,13 +181,21 @@ body{
 
 }
 
-.outline .content .right .top-content .search .fa-search{
+.outline .content .right .top-content .search button{
   margin-left: 5px;
-  color: gray;
+  background-color: white;
+  border: 0;
   font-size: 18px;
-  margin-top: 4px;
+  margin-top: 3px;
+  cursor: pointer;
 
 }
+
+.outline .content .right .top-content .search button .fa-search{
+  color: gray;
+}
+
+
 
 .outline .content .right .top-content .adc-podcast{
   display: flex;
@@ -208,8 +218,21 @@ body{
 
 .outline .content .right .top-content .adc-podcast .text{
   margin-left: 20px;
-  margin-top: 15px;
+  margin-top: 11px;
   font-weight: lighter;
+  font-size: 17px;
+}
+
+.outline .content .right .top-content .adc-podcast .down-arrow button{
+  background-color: rgb(245, 179, 155);
+  margin-left: 25px;
+  border: 0;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.outline .content .right .top-content .adc-podcast .down-arrow button .fa-chevron-down{
+  font-size: 20px;
 }
 
 .music-container .side{
