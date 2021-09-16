@@ -19,7 +19,7 @@ body{
 
 .outline .content .left .items .home{
   display: flex;
-  margin-left:9px;
+  margin-left:2px;
   background-color: rgb(245, 179, 155);
   width: 150px;
   padding: 12px 12px;
@@ -35,7 +35,7 @@ body{
 .outline .content .left .items .home h3{
   color: red;
   font-size: 20px;
-  margin-left: 5px;
+  margin-left: 1px;
 }
 
 .outline .content .left .items .browse{
@@ -99,6 +99,7 @@ body{
 .outline .content .left .library h6{
   color: gray;
   font-weight: 100;
+  font-size: 12px;
  
 }
 
@@ -128,6 +129,7 @@ body{
   font-weight: 100;
   margin-left: 20px;
   margin-top: 30px;
+  font-size: 12px;
  
 }
 .outline .content .right{
