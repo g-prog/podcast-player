@@ -161,6 +161,31 @@ body{
   font-size: 20px;
 }
 
+.outline .content .right .top-content .search{
+  display: flex;
+  background-color: white;
+  margin-left: 28vh;
+  width: 350px;
+  padding: 10px 10px;
+  margin-top: 2vh;
+  border-radius: 5px;
+}
+
+.outline .content .right .top-content .search p{
+  margin-left: 13px;
+  color: gray;
+  font-size: 20px;
+  font-weight: 100;
+
+}
+
+.outline .content .right .top-content .search .fa-search{
+  margin-left: 5px;
+  color: gray;
+  font-size: 18px;
+  margin-top: 4px;
+
+}
 
 .music-container .side{
   float: right;
