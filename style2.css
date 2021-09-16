@@ -355,11 +355,49 @@ body{
 
 }
 
-.outline .content .right .middle-content .side .contents{
+.outline.content .right .middle-content .side .innercontent{
+  display: flex;
+  flex-direction: column;
+}
+.outline .content .right .middle-content .side .innercontent .contents{
   display: flex;
   margin-top: 6px;
   padding: 10px 10px;
 }
+
+.outline .content .right .middle-content .side .innercontent .contents2{
+  display: flex;
+  margin-top: 6px;
+  padding: 10px 10px;
+}
+.outline .content .right .middle-content .side .innercontent .contents2 .content1{
+  display: flex;
+  margin-top: 6px;
+  padding: 10px 10px;
+}
+
+.outline .content .right .middle-content .side .innercontent .contents2 .content1 .fa-heart{
+  color: green;
+  margin-left: 6px;
+}
+
+.outline .content .right .middle-content .side .innercontent .contents2 .content1 p{
+  margin-left: 12px;
+}
+
+.outline .content .right .middle-content .side .innercontent .contents2 .content1 p{
+  margin-left: 12px;
+}
+.outline .content .right .middle-content .side .innercontent .contents2 .content2 {
+  margin-left: 45px;
+  margin-top: 18px;
+}
+
+.outline .content .right .middle-content .side .innercontent .contents2 .content3 {
+  margin-left: 50px;
+  margin-top: 18px;
+}
+
 .outline .content .right .middle-content .side .contents .content1{
   display: flex;
   margin-left: 20px;
