@@ -240,6 +240,7 @@ body{
   display: flex;
 
 
+
 }
 
 .outline .content .right .middle-content .heading{
@@ -312,6 +313,19 @@ body{
   margin-top: 5px;
   font-weight: 100;
   
+}
+
+.outline .content .right .middle-content .side{
+  background-color: white;
+  margin-left: 90vh;
+  height: 40vh;
+  width: 60vh;
+  margin-top: 60px;
+  border-radius: 10px;
+  padding: 10px 10px;
+  
+
+
 }
 
 .music-container .side{
