@@ -138,6 +138,30 @@ body{
   width: 700vh;
 }
 
+.outline .content .right .top-content{
+  display: flex;
+}
+
+.outline .content .right .top-content .arrows{
+  display: flex;
+  background-color: white;
+  margin-left: 2vh;
+  width: 55px;
+  padding: 10px 10px;
+  margin-top: 2vh;
+  border-radius: 5px;
+}
+
+.outline .content .right .top-content .arrows .fa-chevron-right{
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+.outline .content .right .top-content .arrows .fa-chevron-left{
+  font-size: 20px;
+}
+
+
 .music-container .side{
   float: right;
   margin-left: 120px;
