@@ -493,6 +493,18 @@ body{
   font-size: 17px;
   margin-top: 15px;
 }
+
+.outline .content .right .bottom-content .last-content  .top-layer .speaker button{
+  border: 0;
+  background-color: rgb(245, 179, 155);
+  margin-left: 90px;
+  margin-top: 15px;
+}
+
+.outline .content .right .bottom-content .last-content  .top-layer .speaker button .fa-volume-down{
+  font-size: 19px;
+  color: green;
+}
 .music-container .side{
   float: right;
   margin-left: 120px;
