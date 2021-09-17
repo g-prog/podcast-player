@@ -432,7 +432,7 @@ body{
 .outline .content .right .bottom-content .top-content h3{
   font-weight: 100;
   margin-left: 19px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .outline .content .right .bottom-content .top-content .right{
@@ -667,6 +667,7 @@ body{
 
  .outline .content .right .bottom-content .last-content .contents-wrapper .inner-content .content3 .top-layer{
   display: flex; 
+  margin-left: 30px;
  }
 
  .outline .content .right .bottom-content .last-content .contents-wrapper .inner-content .content3 .top-layer .info{
@@ -691,6 +692,7 @@ body{
   display: flex;
   flex-direction: row;
   margin-top: 20px;
+  margin-left: 30px;
  }
 
  .outline .content .right .bottom-content .last-content .contents-wrapper .inner-content .content3 .images .image-info{
@@ -714,7 +716,7 @@ body{
  }
 
  .outline .content .right .bottom-content .last-content .contents-wrapper .inner-content .content4 .top-layer .info p{
-  margin-left: 40px;
+  margin-left: 10px;
   font-size: 17px;
   margin-top: 15px;
 }
@@ -756,7 +758,7 @@ body{
 
  .outline .content .right .bottom-content .last-content .contents-wrapper .inner-content .content4 .top-layer{
   display: flex; 
-  margin-left: 20px;
+  margin-left: 30px;
  }
 
  .outline .content .right .bottom-content .last-content .contents-wrapper .inner-content .content4 .top-layer .info{
