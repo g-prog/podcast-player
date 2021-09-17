@@ -422,11 +422,13 @@ body{
 .outline .content .right .bottom-content{
   display: flex;
   margin-top: 25px;
+  flex-direction: column;
 }
 
 .outline .content .right .bottom-content .top-content h3{
   font-weight: 100;
   margin-left: 19px;
+  margin-top: 20px;
 }
 
 .outline .content .right .bottom-content .top-content .right{
@@ -437,24 +439,59 @@ body{
 }
 
 .outline .content .right .bottom-content .top-content .right button{
-  padding: 0px 4px;
+  padding-top: 3px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   border: 0;
+  height: 16px;
+  margin-top: 27px;
   background-color: rgb(241, 229, 229);
   border-radius: 10px;
+  cursor: pointer;
   
 
 }
 
 .outline .content .right .bottom-content .top-content .right .arrows{
-  display: flex;
   background-color: rgb(245, 179, 155);
 }
-.outline .content .right .bottom-content .top-content .right .arrows .fa-chevron-left{
-  color: gray;
-  font-size: 20px;
+
+.outline .content .right .bottom-content .top-content .right .arrows button{
+  display: flex;
+  background-color: rgb(245, 179, 155);
+  margin-left: 10px;
+  margin-top: 2px;
 }
-.outline .content .right .bottom-content .top-content .right .arrows .fa-chevron-right{
-  font-size: 20px;
+.outline .content .right .bottom-content .top-content .right .arrows button .fa-chevron-left{
+  color: gray;
+  font-size: 15px;
+}
+.outline .content .right .bottom-content .top-content .right .arrows button .fa-chevron-right{
+  font-size: 15px;
+  margin-left: 15px;
+}
+
+.outline .content .right .bottom-content .last-content  .top-layer{
+  display: flex;
+}
+
+.outline .content .right .bottom-content .last-content  .top-layer .info{
+  display: flex;
+  margin-left: 10px;
+}
+
+.outline .content .right .bottom-content .last-content  .top-layer .info img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+
+.outline .content .right .bottom-content .last-content  .top-layer .info p{
+  margin-left: 5px;
+  font-size: 17px;
+  margin-top: 15px;
 }
 .music-container .side{
   float: right;
