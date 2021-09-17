@@ -637,7 +637,8 @@ body{
  .outline .content .right .bottom-content .last-content .contents-wrapper .inner-content .content3{
   display: flex; 
   flex-direction: column;
-  margin-left: 70px;
+  margin-right: 2px;
+
  }
 
  .outline .content .right .bottom-content .last-content .contents-wrapper .inner-content .content3 .top-layer .info p{
@@ -710,7 +711,7 @@ body{
  .outline .content .right .bottom-content .last-content .contents-wrapper .inner-content .content4{
   display: flex; 
   flex-direction: column;
-  margin-left: 600px;
+  margin-left: 60px;
  }
 
  .outline .content .right .bottom-content .last-content .contents-wrapper .inner-content .content4 .top-layer .info p{
