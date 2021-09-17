@@ -432,7 +432,7 @@ body{
 .outline .content .right .bottom-content .top-content h3{
   font-weight: 100;
   margin-left: 19px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .outline .content .right .bottom-content .top-content .right{
@@ -575,7 +575,7 @@ body{
 .outline .content .right .bottom-content .last-content .contents-wrapper .inner-content .content2 .top-layer .info .speaker button{
   border: 0;
   background-color: rgb(245, 179, 155);
-  margin-left: 90px;
+  margin-left: 100px;
   margin-top: 15px;
   
  }
@@ -650,7 +650,7 @@ body{
 .outline .content .right .bottom-content .last-content .contents-wrapper .inner-content .content3 .top-layer .info .speaker button{
   border: 0;
   background-color: rgb(245, 179, 155);
-  margin-left: 90px;
+  margin-left: 100px;
   margin-top: 15px;
   
  }
@@ -711,11 +711,10 @@ body{
  .outline .content .right .bottom-content .last-content .contents-wrapper .inner-content .content4{
   display: flex; 
   flex-direction: column;
-  margin-left: 60px;
  }
 
  .outline .content .right .bottom-content .last-content .contents-wrapper .inner-content .content4 .top-layer .info p{
-  margin-left: 10px;
+  margin-left: 40px;
   font-size: 17px;
   margin-top: 15px;
 }
@@ -757,6 +756,7 @@ body{
 
  .outline .content .right .bottom-content .last-content .contents-wrapper .inner-content .content4 .top-layer{
   display: flex; 
+  margin-left: 20px;
  }
 
  .outline .content .right .bottom-content .last-content .contents-wrapper .inner-content .content4 .top-layer .info{
@@ -781,6 +781,7 @@ body{
   display: flex;
   flex-direction: row;
   margin-top: 20px;
+  margin-left: 40px;
  }
 
  .outline .content .right .bottom-content .last-content .contents-wrapper .inner-content .content4 .images .image-info{
