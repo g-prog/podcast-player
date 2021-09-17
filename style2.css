@@ -249,6 +249,7 @@ body{
 
 .outline .content .right .middle-content .heading h3{
   font-weight: 100;
+  font-size: 20px;
 }
 
 .outline .content .right .middle-content .images {
@@ -323,9 +324,6 @@ body{
   margin-top: 40px;
   border-radius: 10px;
   padding: 12px 10px;
-  
-
-
 }
 .outline .content .right .middle-content .side .heading{
   display: flex;
@@ -352,7 +350,6 @@ body{
 
 .outline .content .right .middle-content .side .heading hr{
   color: gray;
-
 }
 
 .outline.content .right .middle-content .side .innercontent{
@@ -421,6 +418,44 @@ body{
 .outline .content .right .middle-content .side .contents .content1 p{
   margin-left: 8px;
 }
+
+.outline .content .right .bottom-content{
+  display: flex;
+  margin-top: 25px;
+}
+
+.outline .content .right .bottom-content .top-content h3{
+  font-weight: 100;
+  margin-left: 19px;
+}
+
+.outline .content .right .bottom-content .top-content .right{
+  float: right;
+  display: flex;
+  background-color: rgb(245, 179, 155);
+  margin-left: 100vh;
+}
+
+.outline .content .right .bottom-content .top-content .right button{
+  padding: 0px 4px;
+  border: 0;
+  background-color: rgb(241, 229, 229);
+  border-radius: 10px;
+  
+
+}
+
+.outline .content .right .bottom-content .top-content .right .arrows{
+  display: flex;
+  background-color: rgb(245, 179, 155);
+}
+.outline .content .right .bottom-content .top-content .right .arrows .fa-chevron-left{
+  color: gray;
+  font-size: 20px;
+}
+.outline .content .right .bottom-content .top-content .right .arrows .fa-chevron-right{
+  font-size: 20px;
+}
 .music-container .side{
   float: right;
   margin-left: 120px;
@@ -456,9 +491,7 @@ body{
   background-color: white;
   display: flex;
   position: relative;
-  margin: 4px 0;
-  
-  
+  margin: 4px 0; 
 }
 
 .img-container {
@@ -475,7 +508,6 @@ body{
 
 .music-container.play .img-container img {
   opacity: 1;
-
 }
 
 
