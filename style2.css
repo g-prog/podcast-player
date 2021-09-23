@@ -90,6 +90,36 @@ nav .other-links li a{
   color: white;
 }
 
+nav .notification{
+  margin-left: 60px;
+  margin-top: 18px;
+}
+
+nav .admin{
+  display: flex;
+}
+
+nav .admin .text{
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-top: 12px;
+}
+
+nav .admin .text h4{
+  margin-left: 55px;
+}
+nav .admin .text p{
+  font-size: 15px;
+}
+nav .admin .image-container img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+
 .outline{
   display: flex;
 }
