@@ -110,7 +110,8 @@ nav .admin .text h4{
   margin-left: 55px;
 }
 nav .admin .text p{
-  font-size: 15px;
+  font-size: 12px;
+  margin-left: 30px;
 }
 nav .admin .image-container img{
   width: 50px;
