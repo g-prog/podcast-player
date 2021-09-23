@@ -8,6 +8,88 @@ body{
   overflow-x: hidden;
 }
 
+nav{
+  background-color: red;
+  padding: 10px;
+  color: white;
+  display: flex;
+}
+nav img{
+  width: 150px;
+  height: 50px;
+  border-radius: 10%;
+}
+nav .search{
+  display: flex;
+  background-color: white;
+  border-radius: 5px;
+  color: gray;
+  width: 250px;
+  height: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+  padding: 6px;
+}
+
+nav .search button{
+  background-color: white;
+  border: 0;
+}
+
+nav .search p{
+  margin-left: 5px;
+  font-size: 13px;
+}
+nav .hamburger{
+  margin-left: 20px;
+
+}
+nav .hamburger{
+  display: flex;
+}
+nav .hamburger .hamburger-icons {
+  margin-top: 15px;
+  width: 32px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+nav .hamburger .hamburger-icons span{
+  width: 40%;
+  height: 2px;
+  background-color: white;
+  
+}
+nav .hamburger  li{
+  list-style-type: none;
+  margin-top: 16px;
+
+}
+
+
+nav .hamburger  li a{
+  text-decoration: none;
+  color: white;
+
+}
+nav .other-links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5px;
+}
+nav .other-links li{
+  list-style-type: none;
+  display: flex;
+  margin-left: 20px;
+}
+nav .other-links li a{
+  text-decoration: none;
+  color: white;
+}
+
 .outline{
   display: flex;
 }
