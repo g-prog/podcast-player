@@ -17,7 +17,7 @@ nav{
 nav img{
   width: 150px;
   height: 50px;
-  border-radius: 10%;
+  border-radius: 10px;
 }
 nav .search{
   display: flex;
@@ -64,7 +64,7 @@ nav .hamburger .hamburger-icons span{
 }
 nav .hamburger  li{
   list-style-type: none;
-  margin-top: 16px;
+  margin-top: 18px;
 
 }
 
@@ -79,11 +79,12 @@ nav .other-links{
   justify-content: space-between;
   align-items: center;
   margin-left: 5px;
+  margin-top: 2px;
 }
 nav .other-links li{
   list-style-type: none;
   display: flex;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 nav .other-links li a{
   text-decoration: none;
