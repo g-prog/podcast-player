@@ -1,3 +1,15 @@
+const hamburger = document.querySelector(".mobile-hamburger");
+const navMenu = document.querySelector(".other-links");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+
+
 const musicContainer = document.getElementById('music-container');
 const playBtn = document.getElementById('play');
 const prevBtn = document.getElementById('prev');
