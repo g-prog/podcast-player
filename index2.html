@@ -348,18 +348,21 @@
     
     <div class="music-container" id="music-container">
       <div class="music-info">
-        <h4 id="title"></h4>
+        <h3 id="title"></h3>
+        <h5 id="artist"></h5>
+
         
         <div class="progress-container" id="progress-container">
-          
-          <span id="currTime"><p></p></span>
           <div class="progress" id="progress"></div>
-          
-
+          <div class="timer">
+            <span id="currTime">0</span>
+            <span id="durTime">0</span>
+          </div>
         </div>
       </div>
+      
 
-      <audio  src="music/hozier.mp3" id="audio"></audio>
+      <audio  src="music-list.js" id="audio"></audio>
 
       <div class="img-container">
         <img src="images/hozier.jpg" alt="music-cover" id="cover" />
@@ -396,7 +399,7 @@
       
     </div>
 
-
+    <script src="music-list.js"></script>
     <script src="index2.js"></script>
   </body>
 </html>

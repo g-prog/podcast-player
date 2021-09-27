@@ -14,30 +14,32 @@ const musicContainer = document.getElementById('music-container');
 const playBtn = document.getElementById('play');
 const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
-
 const audio = document.getElementById('audio');
 const progress = document.getElementById('progress');
 const progressContainer = document.getElementById('progress-container');
 const title = document.getElementById('title');
+const artist = document.getElementById('artist');
 const cover = document.getElementById('cover');
 const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
-// Song titles
-const songs = ['hozier', 'avril'];
 
-// Keep track of song
-let songIndex = 0;
 
-// Initially load song details into DOM
-loadSong(songs[songIndex]);
+let musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
+isMusicPaused = true;
 
-// Update song details
-function loadSong(song) {
-  title.innerText = song;
-  audio.src = `music/${song}.mp3`;
-  cover.src = `images/${song}.jpg`;
+window.addEventListener("load", ()=>{
+  loadMusic(musicIndex);
+  playingSong(); 
+});
+
+function loadMusic(indexNumb){
+  title.innerText = allMusic[indexNumb - 1].name;
+  artist.innerText = allMusic[indexNumb - 1].artist;
+  cover.src = `images/${allMusic[indexNumb - 1].src}.jpg`;
+  audio.src = `music/${allMusic[indexNumb - 1].src}.mp3`;
 }
+
 
 // Play song
 function playSong() {
@@ -57,110 +59,82 @@ function pauseSong() {
   audio.pause();
 }
 
+
 // Previous song
-function prevSong() {
-  songIndex--;
+function prevMusic(){
+	musicIndex--; //decrement of musicIndex by 1
+	//if musicIndex is less than 1 then musicIndex will be the array length so the last music play
+	musicIndex < 1 ? musicIndex = allMusic.length : musicIndex = musicIndex;
+	loadMusic(musicIndex);
+	playSong();
+	playingSong(); 
+}
 
-  if (songIndex < 0) {
-    songIndex = songs.length - 1;
-  }
-
-  loadSong(songs[songIndex]);
-
+//next music function
+function nextMusic(){
+  musicIndex++; //increment of musicIndex by 1
+  //if musicIndex is greater than array length then musicIndex will be 1 so the first music play
+  musicIndex > allMusic.length ? musicIndex = 1 : musicIndex = musicIndex;
+  loadMusic(musicIndex);
   playSong();
+  playingSong(); 
 }
 
-// Next song
-function nextSong() {
-  songIndex++;
+//prev music button event
+prevBtn.addEventListener("click", ()=>{
+  prevMusic();
+});
 
-  if (songIndex > songs.length - 1) {
-    songIndex = 0;
-  }
-
-  loadSong(songs[songIndex]);
-
-  playSong();
-}
-
-// Update progress bar
-function updateProgress(e) {
-  const { duration, currentTime } = e.srcElement;
-  const progressPercent = (currentTime / duration) * 100;
-  progress.style.width = `${progressPercent}%`;
-}
-
-// Set progress bar
-function setProgress(e) {
-  const width = this.clientWidth;
-  const clickX = e.offsetX;
-  const duration = audio.duration;
-
-  audio.currentTime = (clickX / width) * duration;
-}
-
-//get duration & currentTime for Time of song
-function DurTime (e) {
-	const {duration,currentTime} = e.srcElement;
-	var sec;
-	var sec_d;
-
-	// define minutes currentTime
-	let min = (currentTime==null)? 0:
-	 Math.floor(currentTime/60);
-	 min = min <10 ? '0'+min:min;
-
-	// define seconds currentTime
-	function get_sec (x) {
-		if(Math.floor(x) >= 60){
-			
-			for (var i = 1; i<=60; i++){
-				if(Math.floor(x)>=(60*i) && Math.floor(x)<(60*(i+1))) {
-					sec = Math.floor(x) - (60*i);
-					sec = sec <10 ? '0'+sec:sec;
-				}
-			}
-		}else{
-		 	sec = Math.floor(x);
-		 	sec = sec <10 ? '0'+sec:sec;
-		 }
-	} 
-
-	get_sec (currentTime,sec);
-
-	// change currentTime DOM
-	currTime.innerHTML = min +':'+ sec;
-
-	// define minutes duration
-	let min_d = (isNaN(duration) === true)? '0':
-		Math.floor(duration/60);
-	 min_d = min_d <10 ? '0'+min_d:min_d;
+//next music button event
+nextBtn.addEventListener("click", ()=>{
+  nextMusic();
+});
 
 
-	 function get_sec_d (x) {
-		if(Math.floor(x) >= 60){
-			
-			for (var i = 1; i<=60; i++){
-				if(Math.floor(x)>=(60*i) && Math.floor(x)<(60*(i+1))) {
-					sec_d = Math.floor(x) - (60*i);
-					sec_d = sec_d <10 ? '0'+sec_d:sec_d;
-				}
-			}
-		}else{
-		 	sec_d = (isNaN(duration) === true)? '0':
-		 	Math.floor(x);
-		 	sec_d = sec_d <10 ? '0'+sec_d:sec_d;
-		 }
-	} 
 
-	// define seconds duration
+
+// update progress bar width according to music current time
+audio.addEventListener("timeupdate", (e)=>{
+	const currentTime = e.target.currentTime; //getting playing song currentTime
+	const duration = e.target.duration; //getting playing song total duration
+	let progressWidth = (currentTime / duration) * 100;
+	progress.style.width = `${progressWidth}%`;
+  
+	let musicCurrentTime = document.querySelector("#currTime"),
+	musicDuartion = document.querySelector("#durTime");
+	audio.addEventListener("loadeddata", ()=>{
+	  // update song total duration
+	  let mainAdDuration = audio.duration;
+	  let totalMin = Math.floor(mainAdDuration / 60);
+	  let totalSec = Math.floor(mainAdDuration % 60);
+	  if(totalSec < 10){ //if sec is less than 10 then add 0 before it
+		totalSec = `0${totalSec}`;
+	  }
+	  musicDuartion.innerText = `${totalMin}:${totalSec}`;
+	});
+	// update playing song current time
+	let currentMin = Math.floor(currentTime / 60);
+	let currentSec = Math.floor(currentTime % 60);
+	if(currentSec < 10){ //if sec is less than 10 then add 0 before it
+	  currentSec = `0${currentSec}`;
+	}
+	musicCurrentTime.innerText = `${currentMin}:${currentSec}`;
+  });
+  
+  // update playing song currentTime on according to the progress bar width
+  progressContainer.addEventListener("click", (e)=>{
+	let progressWidth = progressContainer.clientWidth; //getting width of progress bar
+	let clickedOffsetX = e.offsetX; //getting offset x value
+	let songDuration = audio.duration; //getting song total duration
 	
-	get_sec_d (duration);
+	audio.currentTime = (clickedOffsetX / progressWidth) * songDuration;
+	playSong(); //calling playMusic function
+	playingSong();
+  });
+  
 
-	// change duration DOM
-	durTime.innerHTML = min_d +':'+ sec_d;
-		
-};
+
+
 
 // Event listeners
 playBtn.addEventListener('click', () => {
@@ -176,17 +150,3 @@ playBtn.addEventListener('click', () => {
 // Change song
 prevBtn.addEventListener('click', prevSong);
 nextBtn.addEventListener('click', nextSong);
-
-// Time/song update
-audio.addEventListener('timeupdate', updateProgress);
-
-// Click on progress bar
-progressContainer.addEventListener('click', setProgress);
-
-// Song ends
-audio.addEventListener('ended', nextSong);
-
-// Time of song
-audio.addEventListener('timeupdate',DurTime);
-
-

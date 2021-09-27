@@ -1135,6 +1135,18 @@ nav .admin .image-container img{
   height: 4px;
   width: 70%;
   display: flex;
+  
+}
+
+.progress-container .timer{
+  margin-top: 7px;
+  display: flex;
+  position: fixed;
+}
+
+.progress-container .timer #durTime{
+  margin-left: 150vh;
+  position: fixed;
 }
 
 
