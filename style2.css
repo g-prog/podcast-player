@@ -125,8 +125,43 @@ nav .admin .image-container img{
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
+.music-mobile-hamburger{
+  display: none;
+}
 
+@media only screen and (max-width: 600px) {
+
+  .outline .content .left{
+    display: flex;
+    flex-direction: column;
+    top: 68px;
+    width: 200px;
+    height: 400px;
+    background-color: white;
+    left: -100%;
+    position: fixed;
+  
+  }
+
+  .outline .content .left.active{
+    left: 0;
+  
+  }
+  .music-mobile-hamburger{
+    display: block;
+    margin-top: 15px;
+    font-size: 18px;
+    opacity: 3;
+  }
+
+  .music-mobile-hamburger.active{
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  nav img{
+    margin-left: 50px;
+  }
   nav .other-links{
     display: flex;
     position: fixed;
@@ -156,7 +191,7 @@ nav .admin .image-container img{
     cursor: pointer;
     float: right;
     margin-top: 10px;
-    margin-left: 150px;
+    margin-left: 90px;
   }
 
   .mobile-hamburger.active .bar:nth-child(2) {
@@ -251,22 +286,31 @@ nav .admin .image-container img{
   font-size: 20px;
 }
 
-.outline .content .left .items .home h3{
+.outline .content .left .items .home a h3{
   color: red;
   font-size: 20px;
   margin-left: 1px;
 }
 
+.outline .content .left .items .home a {
+  text-decoration: none;
+}
 .outline .content .left .items .browse{
   display: flex;
   margin-top: 20px;
   margin-left: 15px;
 }
-
+.outline .content .left .items .browse a{
+  text-decoration: none;
+}
 .outline .content .left .items .Analytics{
   display: flex;
   margin-top: 20px;
   margin-left: 15px;
+}
+.outline .content .left .items .Analytics a{
+  text-decoration: none;
+  
 }
 .outline .content .left .items .browse .fa-caret-square-down{
   margin-right:10px;

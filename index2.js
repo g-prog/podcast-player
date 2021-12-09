@@ -9,6 +9,15 @@ function mobileMenu() {
 }
 
 
+const hamburger2 = document.querySelector(".music-mobile-hamburger");
+const playMenu = document.querySelector(".left");
+
+hamburger2.addEventListener("click", mobilePlay);
+
+function mobilePlay() {
+    hamburger2.classList.toggle("active");
+    playMenu.classList.toggle("active");
+}
 
 const musicContainer = document.getElementById('music-container');
 const playBtn = document.getElementById('play');
@@ -150,3 +159,25 @@ playBtn.addEventListener('click', () => {
 // Change song
 prevBtn.addEventListener('click', prevSong);
 nextBtn.addEventListener('click', nextSong);
+
+
+
+const repeatBtn = document.querySelector("#repeat");
+repeatBtn.addEventListener("click", ()=>{
+  let getText = repeatBtn.innerText; //getting this tag innerText
+  switch(getText){
+    case "repeat":
+      repeatBtn.innerText = "repeat_one";
+      repeatBtn.setAttribute("title", "Song looped");
+      break;
+    case "repeat_one":
+      repeatBtn.innerText = "shuffle";
+      repeatBtn.setAttribute("title", "Playback shuffled");
+      break;
+    
+  	}
+});
+
+
+
+
