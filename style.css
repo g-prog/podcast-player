@@ -242,7 +242,6 @@ nav .admin .image-container img{
 
   .outline .content .middle-content .images .img-container{
     display: flex !important;
-    
     align-items: center;
     justify-content: center;
     margin-left: 100px;
@@ -275,7 +274,7 @@ nav .admin .image-container img{
   }
 
   .outline .content .middle-content .images .img-container .image2{
-    margin-top: 20px !important;
+    margin-top: 40px !important;
     
   
   }
@@ -299,6 +298,21 @@ nav .admin .image-container img{
     
   
   }
+
+  .outline .content .middle-content .side{
+    display: none !important ;
+    
+  
+  }
+
+  .outline .content .right .bottom-content .last-content .contents-wrapper .inner-content .content3{
+    display: none !important ;
+  }
+
+  .outline .content .right .bottom-content .last-content .contents-wrapper .inner-content .content4{
+    display: none !important ;
+  }
+  
   
   nav .logo h1{
     font-size: 10px;
