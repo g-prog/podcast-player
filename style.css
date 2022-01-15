@@ -161,6 +161,17 @@ nav .admin .image-container img{
     display: none !important;
   }
 
+  .outline .content .right .top-content .adc-podcast .imgcontainer{
+    display: none !important;
+  }
+
+  .outline .content .right .top-content .adc-podcast .text{
+    display: none !important;
+  }
+
+  .outline .content .right .top-content .adc-podcast .down-arrow{
+    display: none !important;
+  }
 
   .music-container .img-container .fa-heart{
     display: none !important;
