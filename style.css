@@ -147,6 +147,20 @@ nav .admin .image-container img{
   
   }
 
+  .outline .content .right .top-content .search{
+    display: flex;
+    background-color: white;
+    margin-left: 10px !important;
+    width: 200px !important;
+    padding: 10px 10px;
+    margin-top: 2vh;
+    border-radius: 5px;
+  }
+
+  .outline .content .right .top-content .adc-podcast{
+    display: none;
+  }
+
 
   .music-container .img-container .fa-heart{
     display: none;
@@ -250,12 +264,15 @@ nav .admin .image-container img{
   
   }
 
+ 
+
   .outline .content .middle-content .images .heading{
     display: flex !important;
     align-items: center;
     justify-content: center;
     margin-left: 70px !important;
     width: 200px;
+    font-weight: 800;
     
   
   }
@@ -360,6 +377,13 @@ nav .admin .image-container img{
     background-color: rgb(245, 179, 155);
     margin-left: 60px !important;
   }
+
+  .outline .content .right .bottom-content .top-content h3{
+    font-weight: 800 !important;
+    margin-top: 30px !important;
+  }
+
+  
   nav .logo h1{
     font-size: 10px;
    
