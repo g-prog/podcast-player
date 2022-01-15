@@ -147,12 +147,99 @@ nav .admin .image-container img{
   
   }
 
-  .outline .content .middle-content .images .img-container{
+
+  .music-container .img-container .fa-heart{
+    display: none;
+  }
+  
+  .music-container {
+    background-color: #ffffff;
     display: flex;
-    flex-direction: column;
+    position: relative;
+    margin: 4px 0; 
+    width: auto !important;
+  }
+
+  .music-container .navigation{
+    margin-left: 1px !important;
+  }
+  .progress-container {
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 4px;
+    width: 70%;
+    display: flex;
+    
+  }
+
+  .music-container.play .music-info {
+    opacity: 1;
+    transform: translateY(-100%);
+    width: 170px;
+  }
+  .music-container .navigation button .fa-backward,.fa-play,.fa-forward,.fa-pause,.fa-redo{
+    color: black;
+    width:1px !important;
+    height: 2px !important;
+  }
+
+  .music-container .navigation button .fa-random, .fa-redo{
+    display: none !important;
+  }
+  
+
+  .outline .content .middle-content .images .img-container{
+    display: flex !important;
+    flex-wrap: wrap !important;
     align-items: center;
     justify-content: center;
-    margin-left: 120px;
+    margin-left: 100px;
+    
+  
+  }
+
+  .outline .content .middle-content .images .heading{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px !important;
+    width: 200px;
+    
+  
+  }
+
+  .outline .content .middle-content .images .img-container .image1 img{
+    width: 220px !important;
+    height: 200px !important;
+    
+  
+  }
+
+  .outline .content .middle-content .images .img-container .image2 img{
+    width: 220px !important;
+    height: 200px !important;
+    
+  
+  }
+
+  .outline .content .middle-content .images .img-container .image2{
+    margin-top: 20px !important;
+    
+  
+  }
+
+  .outline .content .middle-content .images .img-container .image3{
+    margin-top: 20px !important;
+    
+  
+  }
+
+  .outline .content .middle-content .images .img-container .image3 img{
+    width: 220px !important;
+    height: 200px !important;
+    
   
   }
   
@@ -167,9 +254,10 @@ nav .admin .image-container img{
     margin-top: 10px;
    
   }
-  .outline .content .right .top-content{
-    display: none;
   
+
+  .outline .content .right .top-content{
+    display: none !important;
   }
   .outline .content .left.active{
     left: 0;
