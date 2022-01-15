@@ -188,9 +188,21 @@ nav .admin .image-container img{
     color: black;
     width:1px !important;
     height: 2px !important;
+    
   }
 
-  .music-container .navigation button .fa-random, .fa-redo{
+  .music-container .navigation button{
+   
+    width:10px !important;
+    height: 2px !important;
+    
+  }
+
+  .music-container .navigation #shuffle{
+    display: none !important;
+  }
+
+  .music-container .navigation #repeat{
     display: none !important;
   }
   
