@@ -218,6 +218,7 @@ nav .admin .image-container img{
     display: none !important;
   }
 
+  
   .music-container .navigation #repeat{
     display: none !important;
   }
@@ -352,6 +353,13 @@ nav .admin .image-container img{
    }
   
   
+
+   .outline .content .right .bottom-content .top-content .right{
+    float: right;
+    display: flex;
+    background-color: rgb(245, 179, 155);
+    margin-left: 60px !important;
+  }
   nav .logo h1{
     font-size: 10px;
    
@@ -365,9 +373,7 @@ nav .admin .image-container img{
   }
   
 
-  .outline .content .right .top-content{
-    display: none !important;
-  }
+ 
   .outline .content .left.active{
     left: 0;
   
