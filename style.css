@@ -198,7 +198,7 @@ nav .admin .image-container img{
   .music-container.play .music-info {
     opacity: 1;
     transform: translateY(-100%);
-    width: 188px;
+    width: 192px;
   }
   .music-container .navigation button .fa-backward,.fa-play,.fa-forward,.fa-pause,.fa-redo{
     color: black;
