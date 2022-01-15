@@ -161,7 +161,7 @@ nav .admin .image-container img{
   }
 
   .music-container .navigation{
-    margin-left: 1px !important;
+    margin-left: 10px !important;
   }
 
   .progress-container .timer #durTime{
@@ -186,8 +186,8 @@ nav .admin .image-container img{
   }
   .music-container .navigation button .fa-backward,.fa-play,.fa-forward,.fa-pause,.fa-redo{
     color: black;
-    width:1px !important;
-    height: 2px !important;
+    width:10px !important;
+    height: 20px !important;
     
   }
 
