@@ -376,6 +376,7 @@ nav .admin .image-container img{
     display: flex;
     background-color: rgb(245, 179, 155);
     margin-left: 60px !important;
+    margin-top: 8px !important;
   }
 
   .outline .content .right .bottom-content .top-content h3{
