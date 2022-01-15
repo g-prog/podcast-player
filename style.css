@@ -158,7 +158,7 @@ nav .admin .image-container img{
   }
 
   .outline .content .right .top-content .adc-podcast{
-    display: none;
+    display: none !important;
   }
 
 
