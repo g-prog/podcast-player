@@ -208,14 +208,17 @@ nav .admin .image-container img{
 
   .music-container .navigation #play{
     width: 40px !important;
+    height: 40px !important;
   }
 
   .music-container .navigation #prev{
     width: 40px !important;
+    height: 40px !important;
   }
 
   .music-container .navigation #next{
     width: 40px !important;
+    height: 40px !important;
   }
   
 
