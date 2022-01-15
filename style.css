@@ -163,6 +163,11 @@ nav .admin .image-container img{
   .music-container .navigation{
     margin-left: 1px !important;
   }
+
+  .progress-container .timer #durTime{
+    margin-left: 120px !important;
+    position: fixed;
+  }
   .progress-container {
     background: #fff;
     border-radius: 5px;
