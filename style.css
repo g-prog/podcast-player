@@ -164,8 +164,24 @@ nav .admin .image-container img{
     margin-left: 10px !important;
   }
 
+  .music-container .side span{
+    display: none !important;
+  }
+
+  .music-container .side{
+    display: none !important;
+  }
+
+  .music-info {
+    left: 10px !important;
+    justify-content: flex-start!important;
+    
+  }
+
+  
+
   .progress-container .timer #durTime{
-    margin-left: 120px !important;
+    margin-left: 150px !important;
     position: fixed;
   }
   .progress-container {
@@ -174,7 +190,7 @@ nav .admin .image-container img{
     cursor: pointer;
     margin: 10px 0;
     height: 4px;
-    width: 70%;
+    width: 90% !important;
     display: flex;
     
   }
@@ -182,7 +198,7 @@ nav .admin .image-container img{
   .music-container.play .music-info {
     opacity: 1;
     transform: translateY(-100%);
-    width: 170px;
+    width: 175px;
   }
   .music-container .navigation button .fa-backward,.fa-play,.fa-forward,.fa-pause,.fa-redo{
     color: black;
@@ -207,7 +223,7 @@ nav .admin .image-container img{
   }
 
   .music-container .navigation #play{
-    width: 40px !important;
+    width: 50px !important;
     height: 50px !important;
   }
 
