@@ -151,7 +151,7 @@ nav .admin .image-container img{
     display: flex;
     background-color: white;
     margin-left: 10px !important;
-    width: 280px !important;
+    width: 230px !important;
     padding: 10px 10px;
     margin-top: 2vh;
     border-radius: 5px;
@@ -279,10 +279,7 @@ nav .admin .image-container img{
 
   .outline .content .middle-content .images .heading{
     display: flex !important;
-    align-items: center;
-    justify-content: center;
-    margin-left: 70px !important;
-    width: 200px;
+    margin-left: 5px !important;
     font-weight: 800;
     
   
@@ -356,10 +353,18 @@ nav .admin .image-container img{
     height: 70px !important ;
   }
 
+  
+
+  .outline .content .right .bottom-content .last-content .contents-wrapper .inner-content{
+    display: flex; 
+    align-items: flex-start !important ;
+    justify-content: left;
+    margin-top: 20px;
+   }
   .outline .content .right .bottom-content .last-content .contents-wrapper .inner-content .content2 .images img{
     width: 70px !important ;
-    height: 70px !important ;
-    margin-left: 20px;
+    height: 70px !important  ;
+    margin-left: 0px !important;
   }
 
   
@@ -378,7 +383,7 @@ nav .admin .image-container img{
     width: 20px !important ;
     height: 20px !important ;
     margin-top: 20px !important ;
-    margin-left: 20px;
+   
   }
 
   
@@ -393,8 +398,13 @@ nav .admin .image-container img{
     margin-top: 5px;
    }
   
-  
-
+   .outline .content .right .bottom-content .last-content .contents-wrapper .inner-content .content1{
+    margin-left: 9px !important;
+   }
+   .outline .content .right .bottom-content .last-content .contents-wrapper .inner-content .content2{
+    margin-left: 9px !important;
+    margin-top: 10px !important;
+   }
    .outline .content .right .bottom-content .top-content .right{
     float: right;
     display: flex;
